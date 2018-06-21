@@ -1,4 +1,4 @@
-FROM debian:9
+FROM alpine
 
-RUN apt-get update && \
-    apt-get -y --no-install-recommends install ansible
+RUN apk -U add ansible
+
